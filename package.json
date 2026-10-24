@@ -1,0 +1,22 @@
+{
+  "name": "nepal-wildlife-book",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Addressing Nepal's Wildlife Dilemma — coffee table book as a React + Node.js app",
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c yellow,cyan \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "convert": "node scripts/convert-html.mjs \"../Book_design/Nepal Wildlife Book.html\"",
+    "import": "node server/scripts/import-images.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "linkedom": "^0.18.9"
+  }
+}
