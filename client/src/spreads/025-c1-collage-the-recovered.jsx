@@ -4,8 +4,9 @@ import Img from '../images/Img.jsx';
 export default function Spread025C1CollageTheRecovered() {
   return (
     <section className="spread scrapbook" data-screen-label="C1· Collage the recovered">
-      <div className="page left">
-        <figure className="sb-print sb-bleed">
+      <div className="page left paper">
+        {/* Framed with the same margins as the right page's collage */}
+        <figure className="sb-print sb-bleed" style={{ inset: "150px 130px" }}>
           <Img slot="s49" src="/image_assets/img_0096.jpeg" alt="" loading="lazy" />
         </figure>
         <div className="pagenum l">41</div>

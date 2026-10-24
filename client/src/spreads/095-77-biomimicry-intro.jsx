@@ -1,12 +1,14 @@
 import Img from '../images/Img.jsx';
 
-/* SPREAD 77 BIOMIMICRY INTRO (text left, placeholder right) */
+/* SPREAD 77 BIOMIMICRY INTRO — trio layout: narrow text column + 3 equal tall photos */
 export default function Spread095BiomimicryIntro() {
   return (
-    <section className="spread" data-screen-label="77 Biomimicry intro">
+    <section className="spread trio" data-screen-label="77 Biomimicry intro">
+      {/* Removed photo, to restore:
+          <Img slot="s236" src="/image_assets/img_0126.jpeg" alt="" loading="lazy" /> */}
       <div className="page left paper">
-        <div className="page-text">
-          <div className="running-head l">IV · Biomimicry · Learning from Nature's Intelligence</div>
+        <div className="running-head l">IV · Biomimicry · Learning from Nature's Intelligence</div>
+        <div className="tr-text">
           <div className="kicker"> <span className="orn"><span className="dot" /></span> <span className="small-caps">A Living Laboratory</span> </div>
           <h3>Wildlife as a source<br />of <em>knowledge</em>.</h3>
           <div className="body">
@@ -22,18 +24,20 @@ export default function Spread095BiomimicryIntro() {
               handle objects with both strength and precision showing how observing wildlife can inspire
               breakthroughs in engineering.</p>
           </div>
-          <div className="pagenum l">181</div>
         </div>
-      </div>
-      <div className="page right">
-        <div className="gv4">
+        <figure className="tr-img tr-l">
           <Img slot="s233" src="/image_assets/img_0082.jpeg" alt="" loading="lazy" />
+        </figure>
+        <div className="pagenum l">181</div>
+      </div>
+      <div className="page right paper">
+        <figure className="tr-img tr-r1">
           <Img slot="s234" src="/image_assets/img_0106.jpeg" alt="" loading="lazy" />
+        </figure>
+        <figure className="tr-img tr-r2">
           <Img slot="s235" src="/image_assets/img_0122.jpeg" alt="" loading="lazy" />
-          <Img slot="s236" src="/image_assets/img_0126.jpeg" alt="" loading="lazy" />
-          <div className="gbar"><span className="gtx">An elephant's trunk in detail beside a hint of a robotic/bionic arm nature meeting engin…</span></div>
-        </div>
-        <div className="pagenum r img-pn">182</div>
+        </figure>
+        <div className="pagenum r">182</div>
       </div>
     </section>
   );

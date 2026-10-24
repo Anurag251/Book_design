@@ -3,16 +3,22 @@ import Img from '../images/Img.jsx';
 /* SPREAD 45 A WAY FORWARD (placeholder left, text right) — COLLAGE C5· Collage a way shared */
 export default function Spread053C5CollageAWayShared() {
   return (
-    <section className="spread" data-screen-label="C5· Collage a way shared">
-      <div className="page l">
-        <div className="ggrid">
+    <section className="spread scrapbook" data-screen-label="C5· Collage a way shared">
+      {/* Left page uses slide 33's 4-photo collage */}
+      <div className="page l paper">
+        <figure className="sb-print sb-tall">
           <Img slot="s124" src="/image_assets/img_0099.jpeg" alt="" loading="lazy" />
+        </figure>
+        <figure className="sb-print sb-top">
           <Img slot="s125" src="/image_assets/img_0105.jpeg" alt="" loading="lazy" />
+        </figure>
+        <figure className="sb-print sb-mid">
           <Img slot="s126" src="/image_assets/img_0104.jpeg" alt="" loading="lazy" />
+        </figure>
+        <figure className="sb-print sb-wide">
           <Img slot="s127" src="/image_assets/img_0111.jpeg" alt="" loading="lazy" />
-          <div className="gbar"><span className="gtx">A way shared</span></div>
-        </div>
-        <div className="pagenum l img-pn">97</div>
+        </figure>
+        <div className="pagenum l">97</div>
       </div>
       <div className="page r">
         <div className="gfig">

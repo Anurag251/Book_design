@@ -23,12 +23,12 @@ export default function Spread090AddressingZooDivider() {
         <div className="pagenum l img-pn">171</div>
       </div>
       <div className="page right">
-        <div className="ggrid">
+        {/* One full-page photo (cover). Removed grid photos, to restore:
+            <Img slot="s223" src="/image_assets/img_0040.jpeg" alt="" loading="lazy" />
+            <Img slot="s224" src="/image_assets/img_0063.jpeg" alt="" loading="lazy" />
+            <Img slot="s225" src="/image_assets/img_0071.jpeg" alt="" loading="lazy" /> */}
+        <div className="gfig">
           <Img slot="s222" src="/image_assets/img_0039.jpeg" alt="" loading="lazy" />
-          <Img slot="s223" src="/image_assets/img_0040.jpeg" alt="" loading="lazy" />
-          <Img slot="s224" src="/image_assets/img_0063.jpeg" alt="" loading="lazy" />
-          <Img slot="s225" src="/image_assets/img_0071.jpeg" alt="" loading="lazy" />
-          <div className="gbar"><span className="gtx">A landscape-scale wildlife reserve seen from a viewing machhan the zoo reimagined.</span></div>
         </div>
         <div className="pagenum r img-pn">172</div>
       </div>

@@ -940,6 +940,7 @@ hr.rule.amber{ width:140px; height:3px; background:var(--amber); border:0; margi
 .spread.amenities .page { background: var(--paper); }
 /* shared title + body */
 .am-title { font-family:var(--serif); font-weight:400; font-size:41px; line-height:1; text-transform:uppercase; letter-spacing:-.01em; color:var(--ink); margin:0 0 18px; }
+.am-title em { font-style:italic; color:var(--amber); }
 .am-body  { font-family:var(--body); font-size:15px; line-height:1.65; color:#332e26; }
 /* serif-italic variant matches the Nepal's / Megabiodiversity reference style */
 .am-title-serif { font-family:var(--serif); font-weight:400; font-size:46px; line-height:1.05; text-transform:none; letter-spacing:-.01em; color:var(--ink); margin:0 0 15px; }
@@ -1273,3 +1274,158 @@ hr.rule.amber{ width:140px; height:3px; background:var(--amber); border:0; margi
 .ed3 .ed3-label{ position:absolute; left:110px; top:1000px; width:200px;
   font-family:var(--sans); font-size:13px; letter-spacing:.34em; text-transform:uppercase; color:var(--amber); font-weight:600; }
 .ed3 .ed3-label .bar{ display:block; width:60px; height:2px; background:var(--amber); margin-bottom:16px; }
+
+/* =================== MAGAZINE SHOOT SPREAD (title + details left, photo grid right) =================== */
+.mshoot .ms-img{ position:absolute; margin:0; overflow:hidden; box-shadow:0 24px 50px -32px rgba(0,0,0,.55); }
+.mshoot .ms-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* Left page: header block + wide photo along the bottom */
+.mshoot .ms-head{ position:absolute; left:128px; right:128px; top:150px; }
+.mshoot .ms-kicker{ font-family:var(--sans); font-size:13px; letter-spacing:.34em; text-transform:uppercase; color:var(--amber); font-weight:600; }
+.mshoot .ms-title{ margin:28px 0 0; font-family:var(--serif); font-weight:400; font-size:104px; line-height:.95; letter-spacing:-.01em; color:var(--ink); }
+.mshoot .ms-title em{ font-style:italic; color:var(--amber); }
+.mshoot .ms-intro{ margin:34px 0 0; max-width:780px; font-family:var(--serif); font-style:italic; font-size:26px; line-height:1.45; color:#3a342b; }
+.mshoot .ms-intro em{ color:var(--amber); }
+.mshoot .ms-meta{ display:grid; grid-template-columns:1fr 1fr; gap:22px 48px; margin-top:34px; padding-top:30px; border-top:1px solid var(--paper-edge); }
+.mshoot .ms-meta .k{ font-family:var(--sans); font-size:11px; letter-spacing:.32em; text-transform:uppercase; color:var(--muted); font-weight:600; }
+.mshoot .ms-meta .v{ margin-top:6px; font-family:var(--serif); font-size:24px; color:var(--ink); }
+.mshoot .ms-wide{ left:128px; right:128px; top:790px; bottom:150px; }
+
+/* Right page: hero on top, two photos side by side below */
+.mshoot .ms-hero{ left:110px; right:128px; top:150px; height:860px; }
+.mshoot .ms-pair-a{ left:110px; top:1040px; bottom:150px; width:442px; }
+.mshoot .ms-pair-b{ right:128px; top:1040px; bottom:150px; width:442px; }
+
+/* =================== STAGGERED GRID SPREAD (3 tall photos left, mirrored 2×2 right) =================== */
+.stagger .st-img{ position:absolute; margin:0; overflow:hidden; box-shadow:0 24px 50px -32px rgba(0,0,0,.55); }
+.stagger .st-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* Left page: three verticals, staggered — right highest, left 100px lower, middle 200px lower */
+.stagger .st-v1{ left:128px; top:250px; bottom:250px; width:289px; }
+.stagger .st-v2{ left:441px; top:350px; bottom:150px; width:289px; }
+.stagger .st-v3{ left:754px; top:150px; bottom:350px; width:289px; }
+/* Triptych: one photo laid over the whole 915×1428 area (3 × 289 + 2 gaps; top 150 → bottom 150),
+   each strip offset so the image stays continuous through the gaps and the stagger */
+.stagger .st-img img.st-span{ position:absolute; width:915px; height:1428px; }
+.stagger .st-v1 img.st-span{ left:0; top:-100px; }
+.stagger .st-v2 img.st-span{ left:-313px; top:-200px; }
+.stagger .st-v3 img.st-span{ left:-626px; top:0; }
+
+/* Right page: two rows with mirrored widths — narrow + wide, then wide + narrow */
+.stagger .st-a{ left:110px; top:150px; width:360px; height:640px; }
+.stagger .st-b{ right:128px; top:150px; width:530px; height:640px; }
+.stagger .st-c{ left:110px; top:814px; bottom:150px; width:530px; }
+.stagger .st-d{ right:128px; top:814px; bottom:150px; width:360px; }
+
+/* =================== TRAVEL GRID SPREAD (photo grid both pages, rows of mirrored widths) =================== */
+.tgrid .tg-img{ position:absolute; margin:0; overflow:hidden; box-shadow:0 24px 50px -32px rgba(0,0,0,.55); }
+.tgrid .tg-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* Left page: narrow + wide on top, one large photo across the bottom */
+.tgrid .tg-l1{ left:128px; top:150px; width:320px; height:600px; }
+.tgrid .tg-l2{ right:110px; top:150px; width:570px; height:600px; }
+.tgrid .tg-l3{ left:128px; right:110px; top:774px; bottom:150px; }
+
+/* Right page: wide + narrow, then a 2-column grid; the left column's last cell runs two rows tall */
+.tgrid .tg-r1{ left:110px; top:150px; width:490px; height:480px; }
+.tgrid .tg-r2{ right:128px; top:150px; width:400px; height:480px; }
+.tgrid .tg-r3{ left:110px; top:654px; width:430px; height:298px; }
+.tgrid .tg-r4{ right:128px; top:654px; width:460px; height:298px; }
+.tgrid .tg-r5{ right:128px; top:976px; width:460px; height:298px; }
+.tgrid .tg-r6{ left:110px; top:976px; width:430px; bottom:150px; }
+.tgrid .tg-r7{ right:128px; top:1298px; width:460px; bottom:150px; }
+
+/* =================== HERO-ACROSS SPREAD (hero over the spine, a 2-photo column each side) =================== */
+.herox .hx-img{ position:absolute; margin:0; overflow:hidden; z-index:2; box-shadow:0 24px 50px -32px rgba(0,0,0,.55); }
+.herox .hx-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+.herox .hx-hero{ left:588px; width:1092px; top:150px; bottom:150px; }
+/* Left column: tall over short */
+.herox .hx-l1{ left:128px; width:436px; top:150px; height:1003px; }
+.herox .hx-l2{ left:128px; width:436px; top:1177px; bottom:150px; }
+/* Right column: short over tall */
+.herox .hx-r1{ right:128px; width:472px; top:150px; height:548px; }
+.herox .hx-r2{ right:128px; width:472px; top:722px; bottom:150px; }
+
+/* =================== ROW TRIPTYCH (one photo split across 3 rows, inside a 90% area) =================== */
+/* Page 1152×1728, 5% inset → area 1036×1556 at (58, 86); rows 502px tall with 24px gaps */
+.rowtrip .rt-img{ position:absolute; left:58px; right:58px; margin:0; overflow:hidden; box-shadow:0 24px 50px -32px rgba(0,0,0,.55); }
+.rowtrip .rt-1{ top:86px; height:502px; }
+.rowtrip .rt-2{ top:612px; height:502px; }
+.rowtrip .rt-3{ top:1138px; bottom:86px; }
+/* The photo covers the whole area; each row is offset so it shows its own band */
+.rowtrip .rt-img img.rt-span{ position:absolute; left:0; width:1036px; height:1556px; object-fit:cover; display:block; }
+.rowtrip .rt-1 img.rt-span{ top:0; }
+.rowtrip .rt-2 img.rt-span{ top:-526px; }
+.rowtrip .rt-3 img.rt-span{ top:-1052px; }
+
+/* =================== TRIO SPREAD (narrow text column + 3 equal tall photos near the spine) =================== */
+.trio .tr-img{ position:absolute; top:150px; bottom:190px; width:504px; margin:0; overflow:hidden; box-shadow:0 24px 50px -32px rgba(0,0,0,.55); }
+.trio .tr-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+.trio .tr-l{ left:588px; }          /* left page, 60px from the spine */
+.trio .tr-r1{ left:60px; }          /* right page */
+.trio .tr-r2{ left:588px; }
+/* Text column beside the left photo, vertically centred within the photo band */
+.trio .tr-text{ position:absolute; left:128px; width:420px; top:150px; bottom:190px;
+  display:flex; flex-direction:column; justify-content:center; gap:22px; }
+.trio .tr-text h3{ font-family:var(--serif); font-weight:400; font-size:52px; line-height:1.02; margin:0; }
+.trio .tr-text h3 em{ font-style:italic; color:var(--amber); }
+.trio .tr-text .kicker{ display:flex; align-items:center; gap:12px; }
+.trio .tr-text .kicker .small-caps{ font-size:13px; color:var(--amber); letter-spacing:.34em; }
+.trio .tr-text .body{ font-family:var(--body); font-size:18px; line-height:1.6; color:#2A2620; }
+.trio .tr-text .body p{ margin:0; }
+.trio .tr-text .body p+p{ margin-top:12px; }
+.trio .tr-text .body em{ font-style:italic; color:#3a342b; }
+.trio .tr-text .body .dropcap{ float:left; font-family:var(--serif); font-size:80px; line-height:.82; padding:5px 12px 0 0; color:var(--amber); font-weight:500; }
+
+/* =================== PANORAMA SPREAD (one wide photo across the top, text below) =================== */
+.pano .pn-img{ position:absolute; z-index:2; left:128px; right:128px; top:150px; height:880px; margin:0; overflow:hidden; box-shadow:0 24px 50px -32px rgba(0,0,0,.55); }
+.pano .pn-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+/* Left page: kicker + heading under the photo */
+.pano .pn-title{ position:absolute; left:128px; right:110px; top:1110px; display:flex; flex-direction:column; gap:22px; }
+.pano .pn-title .kicker{ display:flex; align-items:center; gap:12px; }
+.pano .pn-title .kicker .small-caps{ font-size:13px; color:var(--amber); letter-spacing:.34em; }
+.pano .pn-title h3{ font-family:var(--serif); font-weight:400; font-size:72px; line-height:1.02; margin:0; }
+.pano .pn-title h3 em{ font-style:italic; color:var(--amber); }
+/* Right page: body in two columns under the photo */
+.pano .pn-body{ position:absolute; left:110px; right:128px; top:1110px; bottom:150px;
+  column-count:2; column-gap:48px; font-family:var(--body); font-size:18px; line-height:1.6; color:#2A2620; }
+.pano .pn-body p{ margin:0 0 12px; }
+.pano .pn-body em{ font-style:italic; color:#3a342b; }
+
+/* =================== EDITORIAL CLUSTER SPREAD (full-bleed left, staggered 4-photo cluster right) =================== */
+.ecluster .ec-img{ position:absolute; margin:0; overflow:hidden; box-shadow:0 24px 50px -32px rgba(0,0,0,.55); }
+.ecluster .ec-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+/* Right page: tall + small on top, small + tall below, each pair offset (measured from the reference) */
+.ecluster .ec-a{ left:128px; top:150px; width:431px; height:776px; }
+.ecluster .ec-b{ left:588px; top:346px; width:295px; height:434px; }
+.ecluster .ec-c{ left:261px; top:954px; width:298px; height:433px; }
+.ecluster .ec-d{ left:588px; top:811px; width:436px; bottom:150px; }
+
+/* =================== THEIR WORLD SPREAD (title bottom-left, scattered collage across both pages) =================== */
+.tworld .tw-img{ position:absolute; z-index:2; margin:0; overflow:hidden; box-shadow:0 24px 50px -32px rgba(0,0,0,.55); }
+.tworld .tw-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+.tworld .tw-img figcaption{ position:absolute; left:16px; bottom:12px; z-index:3; pointer-events:none;
+  font-family:var(--serif); font-style:italic; font-size:22px; color:rgba(255,255,255,.92); text-shadow:0 1px 8px rgba(0,0,0,.7); }
+.tworld .tw-title{ position:absolute; left:128px; top:780px; width:620px; }
+.tworld .tw-its{ font-family:var(--serif); font-style:italic; font-weight:300; font-size:150px; line-height:.8; color:var(--amber); margin:0; }
+.tworld .tw-big{ font-family:var(--serif); font-weight:400; font-size:168px; line-height:.86; letter-spacing:-.02em; text-transform:uppercase; color:var(--ink); margin:14px 0 0; }
+.tworld .tw-kicker{ margin:48px 0 0; font-family:var(--sans); font-size:13px; letter-spacing:.3em; text-transform:uppercase; color:var(--ink); font-weight:600; }
+.tworld .tw-intro{ margin:18px 0 0; max-width:520px; font-family:var(--serif); font-style:italic; font-size:24px; line-height:1.5; color:#3a342b; }
+
+/* =================== BRACKET SPREAD (accent bar, framed title + big figure across the spine, 3 photos) =================== */
+.bracket .bk-img{ position:absolute; z-index:2; margin:0; overflow:hidden; box-shadow:0 24px 50px -32px rgba(0,0,0,.55); }
+.bracket .bk-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+.bracket .bk-bar{ position:absolute; z-index:2; left:128px; top:130px; width:64px; height:870px; background:var(--amber); }
+/* Open bracket: top line, right side, and a shorter bottom line */
+.bracket .bk-frame{ position:absolute; z-index:2; left:347px; top:315px; width:1353px; height:470px;
+  border-top:3px solid var(--amber); border-right:3px solid var(--amber); }
+.bracket .bk-frame-bottom{ position:absolute; z-index:2; left:815px; top:782px; width:888px; height:3px; background:var(--amber); }
+.bracket .bk-text{ position:absolute; z-index:3; left:347px; top:400px; width:700px; }
+.bracket .bk-title{ margin:0; font-family:var(--serif); font-weight:500; font-size:68px; line-height:1; color:var(--ink); }
+.bracket .bk-title em{ font-style:italic; color:var(--amber); }
+.bracket .bk-sub{ margin:14px 0 0; font-family:var(--sans); font-size:14px; letter-spacing:.3em; text-transform:uppercase; color:var(--muted); font-weight:600; }
+.bracket .bk-body{ margin:32px 0 0; font-family:var(--body); font-size:19px; line-height:1.6; color:#2A2620; }
+.bracket .bk-figure{ position:absolute; z-index:3; left:1240px; top:440px; width:400px; text-align:center; }
+.bracket .bk-num{ font-family:var(--serif); font-weight:500; font-size:150px; line-height:1; color:var(--amber); letter-spacing:-.02em; }
+.bracket .bk-num small{ font-size:.45em; }
+.bracket .bk-cap{ margin-top:12px; font-family:var(--sans); font-size:12px; letter-spacing:.28em; text-transform:uppercase; color:var(--muted); font-weight:600; line-height:1.6; }

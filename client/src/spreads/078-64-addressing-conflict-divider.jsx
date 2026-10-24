@@ -23,11 +23,11 @@ export default function Spread078AddressingConflictDivider() {
         <div className="pagenum l img-pn">147</div>
       </div>
       <div className="page right">
-        <div className="gfeat">
+        {/* One full-page photo (cover). Removed grid photos, to restore:
+            <Img slot="s199" src="/image_assets/img_0084.jpeg" alt="" loading="lazy" />
+            <Img slot="s200" src="/image_assets/img_0039.jpeg" alt="" loading="lazy" /> */}
+        <div className="gfig">
           <Img slot="s198" src="/image_assets/img_0083.jpeg" alt="" loading="lazy" />
-          <Img slot="s199" src="/image_assets/img_0084.jpeg" alt="" loading="lazy" />
-          <Img slot="s200" src="/image_assets/img_0039.jpeg" alt="" loading="lazy" />
-          <div className="gbar"><span className="gtx">A wildlife underpass or corridor bridge in use design-led coexistence made concrete.</span></div>
         </div>
         <div className="pagenum r img-pn">148</div>
       </div>

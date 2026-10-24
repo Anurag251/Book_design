@@ -24,13 +24,17 @@ export default function Spread086ZoosInNepal() {
           <div className="pagenum l">163</div>
         </div>
       </div>
-      <div className="page right">
-        <div className="gstack">
-          <Img slot="s218" src="/image_assets/img_0035.jpeg" alt="" loading="lazy" />
-          <Img slot="s219" src="/image_assets/img_0038.jpeg" alt="" loading="lazy" />
-          <div className="gbar"><span className="gtx">Young gharials at the Kasara breeding centre captive care directly linked to wild recove…</span></div>
+      <div className="page right paper">
+        {/* Two stacked photos framed on paper, margins matching the text page */}
+        <div style={{ position: "absolute", top: "150px", bottom: "150px", left: "128px", right: "128px", display: "grid", gridTemplateRows: "1fr 1fr", gap: "40px" }}>
+          <figure style={{ margin: "0", position: "relative", overflow: "hidden", boxShadow: "0 24px 50px -32px rgba(0,0,0,.55)" }}>
+            <Img slot="s218" src="/image_assets/img_0035.jpeg" alt="" loading="lazy" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+          </figure>
+          <figure style={{ margin: "0", position: "relative", overflow: "hidden", boxShadow: "0 24px 50px -32px rgba(0,0,0,.55)" }}>
+            <Img slot="s219" src="/image_assets/img_0038.jpeg" alt="" loading="lazy" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+          </figure>
         </div>
-        <div className="pagenum r img-pn">164</div>
+        <div className="pagenum r">164</div>
       </div>
     </section>
   );

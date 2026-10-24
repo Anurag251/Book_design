@@ -36,8 +36,8 @@ export default function Spread004Contents() {
               <div className="ptitle">Coexistence Dilemmas</div>
               <div className="pdesc">Where wildlife and people meet every day</div>
               <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginTop: "14px" }}>
-                <div className="item"><span className="n">iv.</span><span className="t">The <em>Human–Animal Conflict</em> Dilemma Conflict as a structural outcome of success</span></div>
-                <div className="item"><span className="n">v.</span><span className="t">The <em>Urban Planning</em> Dilemma Cities, corridors, and invisible ecological boundaries</span></div>
+                <div className="item"><span className="n">iv.</span><span className="t">The <em>Urban Planning</em> Dilemma Cities, corridors, and invisible ecological boundaries</span></div>
+                <div className="item"><span className="n">v.</span><span className="t">The <em>Human–Animal Conflict</em> Dilemma Conflict as a structural outcome of success</span></div>
               </div>
             </div>
             <div className="part">

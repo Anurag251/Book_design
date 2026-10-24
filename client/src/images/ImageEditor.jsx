@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useImageStore } from './ImageStore.jsx';
-import { DEFAULT_FIT, framedStyle } from './imageStyle.js';
+import { DEFAULT_FIT, directStyle } from './imageStyle.js';
 
 const FITS = ['cover', 'contain', 'fill'];
 
@@ -72,7 +72,8 @@ function EditorDialog({ editing, saved, onClose, save, reset }) {
           onDrop={(e) => { e.preventDefault(); setDragOver(false); pickFile(e.dataTransfer.files[0]); }}
         >
           {previewUrl ? (
-            <img id="book-img-preview" src={previewUrl} alt="" style={framedStyle(fit)} />
+            // Same styling as the book's <Img>, so the preview matches the page exactly.
+            <img id="book-img-preview" src={previewUrl} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', ...directStyle(fit) }} />
           ) : (
             <div id="book-img-drop-hint">
               <span className="drop-icon">&#8682;</span>

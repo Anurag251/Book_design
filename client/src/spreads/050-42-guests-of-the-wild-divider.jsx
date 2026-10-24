@@ -25,12 +25,12 @@ export default function Spread050GuestsOfTheWildDivider() {
         <div className="pagenum l img-pn">91</div>
       </div>
       <div className="page right">
-        <div className="ggrid">
+        {/* One full-page photo (cover). Removed grid photos, to restore:
+            <Img slot="s120" src="/image_assets/img_0088.jpeg" alt="" loading="lazy" />
+            <Img slot="s121" src="/image_assets/img_0051.jpeg" alt="" loading="lazy" />
+            <Img slot="s122" src="/image_assets/img_0046.jpeg" alt="" loading="lazy" /> */}
+        <div className="gfig">
           <Img slot="s119" src="/image_assets/img_0101.jpeg" alt="" loading="lazy" />
-          <Img slot="s120" src="/image_assets/img_0088.jpeg" alt="" loading="lazy" />
-          <Img slot="s121" src="/image_assets/img_0051.jpeg" alt="" loading="lazy" />
-          <Img slot="s122" src="/image_assets/img_0046.jpeg" alt="" loading="lazy" />
-          <div className="gbar"><span className="gtx">A single quiet safari moment one jeep, soft light, an unhurried animal. Restraint made v…</span></div>
         </div>
         <div className="pagenum r img-pn">92</div>
       </div>

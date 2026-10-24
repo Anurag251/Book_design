@@ -24,12 +24,12 @@ export default function Spread104PhotosDivider() {
         <div className="pagenum l img-pn">199</div>
       </div>
       <div className="page right">
-        <div className="ggrid">
+        {/* One full-page photo (cover). Removed grid photos, to restore:
+            <Img slot="s262" src="/image_assets/img_0102.jpeg" alt="A landscape or creature from Nepal's wild the closing gallery, frame two" loading="lazy" />
+            <Img slot="s263" src="/image_assets/img_0103.jpeg" alt="A landscape or creature from Nepal's wild the closing gallery, frame three" loading="lazy" />
+            <Img slot="s264" src="/image_assets/img_0114.jpeg" alt="A landscape or creature from Nepal's wild the closing gallery, frame four" loading="lazy" /> */}
+        <div className="gfig">
           <Img slot="s261" src="/image_assets/img_0116.jpeg" alt="A wildlife or landscape frame opening the closing gallery Nepal's quiet witnesses" loading="lazy" />
-          <Img slot="s262" src="/image_assets/img_0102.jpeg" alt="A landscape or creature from Nepal's wild the closing gallery, frame two" loading="lazy" />
-          <Img slot="s263" src="/image_assets/img_0103.jpeg" alt="A landscape or creature from Nepal's wild the closing gallery, frame three" loading="lazy" />
-          <Img slot="s264" src="/image_assets/img_0114.jpeg" alt="A landscape or creature from Nepal's wild the closing gallery, frame four" loading="lazy" />
-          <div className="gbar"><span className="gtx">A signature landscape or wildlife frame to open the closing photo gallery.</span></div>
         </div>
         <div className="pagenum r img-pn">200</div>
       </div>

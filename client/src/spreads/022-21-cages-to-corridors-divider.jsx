@@ -24,12 +24,14 @@ export default function Spread022CagesToCorridorsDivider() {
         <div className="pagenum l img-pn">35</div>
       </div>
       <div className="page right">
-        <div className="ggrid">
-          <Img slot="s39" src="/image_assets/img_0012.jpeg" alt="" loading="lazy" />
-          <Img slot="s40" src="/image_assets/img_0014.jpeg" alt="" loading="lazy" />
-          <Img slot="s41" src="/image_assets/img_0010.jpeg" alt="" loading="lazy" />
-          <Img slot="s42" src="/image_assets/img_0002.jpeg" alt="" loading="lazy" />
-          <div className="gbar"><span className="gtx">A landscape view wide forest corridor, or two tigers in open space. Bright, hopeful tone.</span></div>
+        {/* One full-page photo (cover). Removed grid photos, to restore:
+            <Img slot="s40" src="/image_assets/img_0014.jpeg" alt="" loading="lazy" />
+            <Img slot="s41" src="/image_assets/img_0010.jpeg" alt="" loading="lazy" />
+            <Img slot="s42" src="/image_assets/img_0002.jpeg" alt="" loading="lazy" />
+            Previous photo (tiger close-up, also used on several other slides):
+            <Img slot="s39" src="/image_assets/img_0012.jpeg" alt="" loading="lazy" /> */}
+        <div className="gfig">
+          <Img slot="s273" src="/photos/p11-1.jpg" alt="A tiger peering over a wall from behind the bars of its enclosure" loading="lazy" />
         </div>
         <div className="pagenum r img-pn">36</div>
       </div>

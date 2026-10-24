@@ -25,13 +25,17 @@ export default function Spread076BufferZones() {
           <div className="pagenum l">143</div>
         </div>
       </div>
-      <div className="page right">
-        <div className="gstack">
-          <Img slot="s191" src="/image_assets/img_0009.jpeg" alt="" loading="lazy" />
-          <Img slot="s192" src="/image_assets/img_0056.jpeg" alt="" loading="lazy" />
-          <div className="gbar"><span className="gtx">A buffer-zone landscape community forest, footpaths, and a park boundary line in the dis…</span></div>
+      <div className="page right paper">
+        {/* Two stacked photos framed on paper, margins matching the text page */}
+        <div style={{ position: "absolute", top: "150px", bottom: "150px", left: "128px", right: "128px", display: "grid", gridTemplateRows: "1fr 1fr", gap: "40px" }}>
+          <figure style={{ margin: "0", position: "relative", overflow: "hidden", boxShadow: "0 24px 50px -32px rgba(0,0,0,.55)" }}>
+            <Img slot="s191" src="/image_assets/img_0009.jpeg" alt="" loading="lazy" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+          </figure>
+          <figure style={{ margin: "0", position: "relative", overflow: "hidden", boxShadow: "0 24px 50px -32px rgba(0,0,0,.55)" }}>
+            <Img slot="s192" src="/image_assets/img_0056.jpeg" alt="" loading="lazy" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+          </figure>
         </div>
-        <div className="pagenum r img-pn">144</div>
+        <div className="pagenum r">144</div>
       </div>
     </section>
   );

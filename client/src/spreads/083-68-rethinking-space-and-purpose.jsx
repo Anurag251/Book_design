@@ -22,18 +22,28 @@ export default function Spread083RethinkingSpaceAndPurpose() {
               remain places of observation or evolve into spaces that prepare both animals and people
               for living alongside one another.</p>
           </div>
+          {/* Fills the space between the text and the bottom margin */}
+          <figure style={{ flex: "1", minHeight: "0", margin: "24px 0 0", overflow: "hidden", position: "relative", boxShadow: "0 24px 50px -32px rgba(0,0,0,.55)" }}>
+            <Img slot="s206" src="/image_assets/img_0016.jpeg" alt="" loading="lazy" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+          </figure>
           <div className="pagenum l">157</div>
         </div>
       </div>
-      <div className="page right">
-        <div className="gmosaic">
-          <Img slot="s206" src="/image_assets/img_0016.jpeg" alt="" loading="lazy" />
-          <Img slot="s207" src="/image_assets/img_0017.jpeg" alt="" loading="lazy" />
+      {/* Right page: one photo (s207) split across 3 rows inside a 90% area (offsets in book.css).
+          Removed photos, to restore:
           <Img slot="s208" src="/image_assets/img_0018.jpeg" alt="" loading="lazy" />
-          <Img slot="s209" src="/image_assets/img_0125.jpeg" alt="" loading="lazy" />
-          <div className="gbar"><span className="gtx">A compact urban enclosure contrasted with open sky the spatial limits of the old model.</span></div>
-        </div>
-        <div className="pagenum r img-pn">158</div>
+          <Img slot="s209" src="/image_assets/img_0125.jpeg" alt="" loading="lazy" /> */}
+      <div className="page right paper rowtrip">
+        <figure className="rt-img rt-1">
+          <Img slot="s207" src="/image_assets/img_0017.jpeg" alt="" loading="lazy" className="rt-span" />
+        </figure>
+        <figure className="rt-img rt-2">
+          <Img slot="s207" src="/image_assets/img_0017.jpeg" alt="" loading="lazy" className="rt-span" />
+        </figure>
+        <figure className="rt-img rt-3">
+          <Img slot="s207" src="/image_assets/img_0017.jpeg" alt="" loading="lazy" className="rt-span" />
+        </figure>
+        <div className="pagenum r">158</div>
       </div>
     </section>
   );

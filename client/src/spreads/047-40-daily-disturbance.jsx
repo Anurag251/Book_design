@@ -3,16 +3,19 @@ import Img from '../images/Img.jsx';
 /* SPREAD 40 DAILY DISTURBANCE (placeholder left, text right) */
 export default function Spread047DailyDisturbance() {
   return (
-    <section className="spread" data-screen-label="40 Daily disturbance">
-      <div className="page left">
-        <div className="gv4">
+    <section className="spread scrapbook" data-screen-label="40 Daily disturbance">
+      {/* Left page uses slide 38's 3-photo collage; the 4th photo (s113) sits below the text on the right page */}
+      <div className="page left paper sb-three">
+        <figure className="sb-print sb-tall">
           <Img slot="s110" src="/image_assets/img_0096.jpeg" alt="" loading="lazy" />
+        </figure>
+        <figure className="sb-print sb-top">
           <Img slot="s111" src="/image_assets/img_0072.jpeg" alt="" loading="lazy" />
+        </figure>
+        <figure className="sb-print sb-mid">
           <Img slot="s112" src="/image_assets/img_0040.jpeg" alt="" loading="lazy" />
-          <Img slot="s113" src="/image_assets/img_0083.jpeg" alt="" loading="lazy" />
-          <div className="gbar"><span className="gtx">A rhino in a Chitwan grassland calm, unhurried placed against a single distant jeep.</span></div>
-        </div>
-        <div className="pagenum l img-pn">85</div>
+        </figure>
+        <div className="pagenum l">85</div>
       </div>
       <div className="page right paper">
         <div className="page-text">
@@ -29,6 +32,10 @@ export default function Spread047DailyDisturbance() {
               open spaces. What begins as admiration slowly becomes intrusion.</p>
           </div>
           <div className="pull"> The challenge is whether conservation tourism can remain true to its purpose <em>as success accelerates</em>. </div>
+          {/* Fills the space between the text and the bottom margin */}
+          <figure style={{ flex: "1", minHeight: "0", margin: "24px 0 0", overflow: "hidden", position: "relative", boxShadow: "0 24px 50px -32px rgba(0,0,0,.55)" }}>
+            <Img slot="s113" src="/image_assets/img_0083.jpeg" alt="" loading="lazy" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+          </figure>
           <div className="pagenum r">86</div>
         </div>
       </div>
